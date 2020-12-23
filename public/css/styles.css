@@ -1,0 +1,52 @@
+body {
+  background-color: #e3fdfd;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+header a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 20px 30px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+footer {
+  border-top: #71c9ce solid;
+  font-size: 0.8rem;
+}
+
+input {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1.3rem;
+}
+
+button {
+  font-size: 1.3rem;
+  margin: 8px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #71c9ce;
+}
