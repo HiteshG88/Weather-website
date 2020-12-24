@@ -15,13 +15,16 @@ const forecast = (latitude, longitude, callback) => {
         }
         else
         {
+            console.log(response.body);
             // we can also send an object.
-            callback(undefined, 
-                'Current temperature is '+ response.body.current.temperature + ' Deg but it feels like '+response.body.current.feelslike + ' Deg.'
-                // currentTemp: response.body.current.temperature,
-                // feelsLikeTemp: response.body.current.feelslike,
-                // location: response.body.location.name
-            )
+            callback(undefined,{
+                currentTemp: response.body.current.temperature,
+                feelTemp: response.body.current.feelslike,
+                visibility: response.body.current.visibility,
+                humidity: response.body.current.humidity,
+                wind_speed: response.body.current.wind_speed,
+                weather_descriptions: response.body.current.weather_descriptions[0], //! doesn't work
+            })
         }
     })
 }
