@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
         }
         else
         {
-            console.log(response.body);
+            // console.log(response.body);
             // we can also send an object.
             callback(undefined,{
                 currentTemp: response.body.current.temperature,
