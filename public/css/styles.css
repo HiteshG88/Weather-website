@@ -1,13 +1,25 @@
 body {
   background-color: #e3fdfd;
+  background-image: url("./img/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 30px;
   text-align: center;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+}
+
+.main p {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 h1 {
@@ -20,10 +32,16 @@ header {
 }
 
 header a {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: black;
   text-decoration: none;
   margin: 20px 30px;
+  flex: 1 1 auto;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .main {
@@ -31,12 +49,16 @@ header a {
 }
 
 footer {
-  border-top: #71c9ce solid;
+  background-color: rgba(0, 0, 0, 0.336);
+  /* border-top: black solid; */
   font-size: 0.8rem;
+  color: #e3fdfd;
 }
 
 input {
-  border: 1px solid;
+  border: 1px solid #a8b8b8;
+  background-color: #1b1d1d;
+  color: #a8b8b8;
   padding: 8px;
   border-radius: 4px;
   font-size: 1.3rem;
@@ -48,5 +70,7 @@ button {
   border: 1px solid;
   border-radius: 4px;
   padding: 8px;
-  background-color: #71c9ce;
+  background-color: #1b1d1d;
+  color: #a8b8b8;
+  border: 1 solid #1b1d1d;
 }
