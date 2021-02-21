@@ -15,15 +15,12 @@ const forecast = (latitude, longitude, callback) => {
         }
         else
         {
-            // console.log(response.body);
-            // we can also send an object.
             callback(undefined,{
                 currentTemp: response.body.current.temperature,
                 feelTemp: response.body.current.feelslike,
                 visibility: response.body.current.visibility,
                 humidity: response.body.current.humidity,
-                wind_speed: response.body.current.wind_speed,
-                weather_descriptions: response.body.current.weather_descriptions[0], //! doesn't work
+                wind_speed: response.body.current.wind_speed            
             })
         }
     })
