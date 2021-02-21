@@ -90,7 +90,7 @@ app.get('/weather', (req, res) => {
 
 app.get('/help/*', (req,res) => {
     res.render('404', {
-        title: "Check your Route Bro...",
+        title: "Check your Route...",
         name: "Hitesh Gupta",
         errorMessage: "help article not found 404!"
     })
@@ -99,7 +99,7 @@ app.get('/help/*', (req,res) => {
 
 app.get('*', (req,res) => {
     res.render('404' , {
-        title: "YOU LOOKING FOR ME!!",
+        title: "404: not found!!",
         name: "Hitesh Gupta",
         errorMessage: "Page not found 404!"
     })
