@@ -68,7 +68,7 @@ app.get('/weather', (req, res) => {
         })
         }
     
-        forecast(latitude, longitude, (error, {currentTemp, feelTemp, visibility,humidity, wind_speed, weather_descriptions}) => {
+        forecast(latitude, longitude, (error, {currentTemp, feelTemp, visibility,humidity, wind_speed}) => {
             if (error) {
                 return res.send({
                     error: error
@@ -77,12 +77,11 @@ app.get('/weather', (req, res) => {
             res.send({
                 Address: place_name,
                 forecast:{
-                    CurrentTemp: 'Current temperature is ' + currentTemp,
+                    CurrentTemp: 'Current temperature is: ' + currentTemp,
                     FeelsLikeTemp: "It Feels like: " + feelTemp,
                     Visibility: "Visibility is " + visibility,
                     Humidity: "Humidity is " + humidity,
-                    Wind_speed: "Wind speed is " + wind_speed,
-                    Weather_descriptions: weather_descriptions //! doesn't work  
+                    Wind_speed: "Wind speed is " + wind_speed
                 }
             })
         })
